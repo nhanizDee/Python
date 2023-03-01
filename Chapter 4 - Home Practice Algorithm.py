@@ -8,7 +8,7 @@
 
 product = 0
 while product < 100:
-    num = int(input('Enter an number: '))
+    num = int(input('Enter a number: '))
     product = 10*num
     print(product)
 
