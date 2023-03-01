@@ -13,7 +13,7 @@ package = input("Which package have you purchased (A, B, C, D, or E)? ")
 while package not in ["A", "B", "C", "D", "E"]:
     package = input("Invalid input. Please choose package A, B, C, D, or E: ")
 
-# Pakage E then the monthly bill is just 69.99 for unlimmited    
+# Package E then the monthly bill is just 69.99 for un-limited
 if package == "E":
     monthly_bill = 69.99
     print(f"Your monthly bill is ${monthly_bill:.2f}")

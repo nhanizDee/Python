@@ -33,7 +33,7 @@ while again == "Y":
     number1 = float(input('Enter 1: '))
     number2 = float(input('Enter 2: '))
     sum_two_no = number1 + number2
-    print(f"The sum of two number is {sum_two_no}")
+    print(f"The sum of two number is {sum_two_no: .2f}")
     again = input("Want to keep going(Y/N): ")
 
 # work 3
