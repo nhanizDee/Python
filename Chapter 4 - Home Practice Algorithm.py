@@ -2,7 +2,6 @@
 # Nhan Nguyen
 # Chapter 4
 
-
 # work 1
 # loop enter a number, number *10,
 # then assign to variable "product" , iterate as long as product <100
@@ -65,3 +64,17 @@ for x in range(100):
     x -= 100
 
 # work 7
+# write a nested loop that print 10 row, each row have 15 character '#'.
+for i in range(10):
+    for j in range(15):
+        print('#', end="")
+    print()
+# work 8
+# write a program that prompts user to enter a number that positive and nonzero. Validate it.
+while True:
+    num_nonzero = int(input('Enter a nonzero positive number: '))
+    if num_nonzero <= 0:
+        num_nonzero = input('Can not be negative or equal 0. Input another number.')
+    else:
+        break
+print(num_nonzero)
