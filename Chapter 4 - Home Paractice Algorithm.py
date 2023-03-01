@@ -45,3 +45,23 @@ print(total)
 # work 5
 # write a loop that calculates the total of the following series
 # 1/30 + 2/29 + 3/28 + ... + 30/1
+
+sum_fraction = 0.0
+for i in range(1, 31):  # taking number in a range of 1 to n+1
+    # to have last number end of n.
+    sum_fraction += i/(31 - i)
+print(sum_fraction)
+
+# work 6
+# augmented assignment operator
+# x = x + 1
+# x = x * 2
+# x = x/10
+# x = x -100
+for x in range(100):
+    x += 1
+    x *= 2
+    x /= 10
+    x -= 100
+
+# work 7
