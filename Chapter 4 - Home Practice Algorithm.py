@@ -45,7 +45,7 @@ for i in range(0, 1001, 10):  # take i in a set from 0 to 1001,
 # work 4
 # write a loop that ask user to enter a number. The loop should iterate
 # 10 times and keep a running total of the number entered.
-total = 0
+total = 0  # should let it be using data type 'float' rather than just 'int'.
 for i in range(10):
     num_in = int(input('Enter a number: '))
     total += num_in
@@ -60,6 +60,15 @@ for i in range(1, 31):  # taking number in a range of 1 to n+1
     # to have last number end of n.
     sum_fraction += i/(31 - i)
 print(sum_fraction)
+
+# another way for 5
+denominator = 30
+total = 0
+for number in range(1, 31):
+    val = number/denominator
+    total += val
+    denominator -= 1
+print(total)
 
 # work 6
 # augmented assignment operator
@@ -82,9 +91,18 @@ for i in range(10):
 # work 8
 # write a program that prompts user to enter a number that positive and nonzero. Validate it.
 while True:
-    num_nonzero = int(input('Enter a nonzero positive number: '))
-    if num_nonzero <= 0:
-        num_nonzero = input('Can not be negative or equal 0. Input another number.')
-    else:
+    num_nonzero = int(input('Enter a nonzero positive number: '))  # should use float for more option
+    # of a nonzero positive number
+    if num_nonzero > 0:
         break
+    else:
+        print('Can not be negative or equal 0.Input another number.')
 print(num_nonzero)
+
+# work 9
+#
+num = int(input("Enter number between 1 and 100: "))
+while num < 1 or num > 100:
+    print("Invalid value, enter another number!")
+    num = int(input("Enter number between 1 and 100: "))
+print(num)
