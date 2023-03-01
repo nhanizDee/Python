@@ -26,6 +26,16 @@ while True:
         continue
     else:
         break
+
+# another way for 2
+again = "Y"
+while again == "Y":
+    number1 = float(input('Enter 1: '))
+    number2 = float(input('Enter 2: '))
+    sum_two_no = number1 + number2
+    print(f"The sum of two number is {sum_two_no}")
+    again = input("Want to keep going(Y/N): ")
+
 # work 3
 # write a loop print set 0,10,20,30,40,...1000
 for i in range(0, 1001, 10):  # take i in a set from 0 to 1001,
