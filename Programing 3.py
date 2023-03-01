@@ -29,7 +29,7 @@ while True:
 
     # Validate employee number
 
-    if em_num <= 0:
+    if em_num < 0:
         em_num = int(input('Error: Employee number can not be negatve, re-enter it: '))
     elif em_num == 0:
         break
@@ -71,8 +71,8 @@ while True:
 
 # print totals
 print("Payroll report:")
-print(f"Total gross pay: {total_gross:.2f}")
-print(f"Total state tax: {total_stateT:.2f}")
-print(f"Total federal tax: {total_fedT:.2f}")
-print(f"Total FICA withholding: {total_FICA_wth:.2f}")
-print(f"Total net pay: {total_net:.2f}")
+print(f"Total gross pay: ${total_gross:.2f}")
+print(f"Total state tax: ${total_stateT:.2f}")
+print(f"Total federal tax: ${total_fedT:.2f}")
+print(f"Total FICA withholding: ${total_FICA_wth:.2f}")
+print(f"Total net pay: ${total_net:.2f}")
