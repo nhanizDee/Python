@@ -9,7 +9,6 @@
 # and FICA with-holdings.
 # 2-  The loop will terminate when 0 is entered for the employee number
 # 3- Display total value after entered
-
 # no negative allow, sum of state, fed, and FICA can not over net pay
 
 # Declare total need to report
@@ -35,7 +34,6 @@ while True:
         break
 
     # Get the information from user
-
     gross_p = float(input(f"Enter gross pay for employee {em_num}: "))  # Gross pay
     while gross_p <= 0:
         gross_p = float(input(f"Gross pay can not be negative, re-enter gross pay for employee {em_num}: "))
@@ -43,15 +41,35 @@ while True:
     state_tax = float(input('Enter the state tax: '))  # State tax
     while state_tax <= 0 or state_tax > gross_p:
         state_tax = float(input('State tax can not be negative or greater than gross pay re-enter state tax: '))
-
+    # This whole part is to use incase we need to perform different with state tax by percentage
+    # state_tax_rate = float(input("Enter state tax rate as a percentage: "))
+    # while state_tax_rate < 0 or state_tax_rate > 100:
+    #    print("State tax rate must be between 0 and 100.")
+    #    state_tax_rate = float(input("Enter state tax rate as a percentage: "))
+    # state_tax = gross_pay * state_tax_rate / 100.0
+    # while state_tax > gross_pay:
+    #    print("State tax cannot be greater than gross pay.")
+    #    state_tax = float(input("Enter state tax: "))
     fed_tax = float(input('Enter the federal tax: '))  # Federal tax
     while fed_tax <= 0 or fed_tax > gross_p:
         fed_tax = float(input('Federal tax can not be negative or greater than gross pay, re-enter federal tax: '))
 
+    # federal_tax_rate = float(input("Enter federal tax rate as a percentage: "))
+    #     while federal_tax_rate < 0 or federal_tax_rate > 100:
+    #         print("Federal tax rate must be between 0 and 100.")
+    #         federal_tax_rate = float(input("Enter federal tax rate as a percentage: "))
+    #     federal_tax = gross_pay * federal_tax_rate / 100.0
+    #     while federal_tax > gross_pay:
+    #         print("Federal tax cannot be greater than gross pay.")
+    #         federal_tax = float(input("Enter federal tax: "))
     fica_wth = float(input('Enter the FICA withholding: '))  # FICA withholding
     while fica_wth <= 0 or fica_wth > gross_p:
         fica_wth = float(input('Withholding can not be negative or greater than gross pay, re-enter withholding: '))
 
+    # fica_withholding = float(input("Enter FICA withholding: "))
+    # while fica_withholding < 0 or fica_withholding > gross_pay:
+    #   print("FICA withholding cannot be negative or greater than gross pay.")
+    #      fica_withholding = float(input("Enter FICA withholding: "))
     # Calculating net pay
     net_pay = gross_p - state_tax - fed_tax - fica_wth
     if net_pay <= 0:  # if not having <=, you can input -0 as a value, and it still counts as 0.
