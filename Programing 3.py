@@ -25,11 +25,10 @@ while True:
     em_num = int(input(
         'Enter employee number(enter 0 to quit): '))  # Em number will be any that > 0,
     # if 0 appear then it end of the loop.
-
     # Validate employee number
 
     if em_num < 0:
-        em_num = int(input('Error: Employee number can not be negatve, re-enter it: '))
+        em_num = int(input('Error: Employee number can not be negative, re-enter it: '))
     elif em_num == 0:
         break
 
