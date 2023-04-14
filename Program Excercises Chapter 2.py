@@ -1,23 +1,26 @@
-#algoritn workbench
+def main():
+    counter = 0
+    num_in_file = 0.00  # can be float so jus to verify it
+    total = 0
 
-#q1
-height = int(intput(""))
+    try:
+        infile = open('numbers.txt', 'r')  # r to read the file after open it
+        # for loop to auto read the file
+        for line in infile:
+            counter += 1
+            num_in_file = float(line)
+            total += num_in_file
+        infile.close()  # close the file
 
-#q3
-b = a+2
-a= b*4
-b= a/3.14
-a= b-8
+        average = total / counter
 
-#q5
-total= 10+14
-#q6
-due = total + douw_payment
-#q10
-print("sales:", format(sales,'.2f'))
+        print('Average of file is: ', average)
+    except IOError:
+        print('An error occurred while trying to read the file')
+    except ValueError:
+        print('Non numeric data occurred.')
+    except:
+        print('An error occurred')
 
-sales= float(round()'.2f')
-print(sales)
 
-#q11
-print("sales:", format(sales: ,'.1f'))
+main()
