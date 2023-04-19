@@ -1,6 +1,4 @@
 # Team Member:
-# Cochise Nava
-# Max Raven
 # Nhan Nguyen
 #  Date: Apr 5, 2023
 # Program 5: Reading and working on file
