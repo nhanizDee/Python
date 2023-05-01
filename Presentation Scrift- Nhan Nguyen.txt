@@ -1,0 +1,40 @@
+Presentation Scrift
+
+Part I
+1. Title
+
+2. Intro:
+   Why this problem?
+   What the number tell us? (Outside of religion and ethnic, we just talk about the number and it relationship)
+
+3. Data Intro:
+       _ Guttmacher team
+       _ Guttmacher Project
+
+4. Deep look and analyze data set
+
+5. Over all information in the United State( finding the total number in 2 period 1988 and 2017)
+
+6. Max and min rate and number of case of abortion, pregnacy, birth rate and miscarriages
+
+7. 8. 9. Visual graph
+
+Part II
+
+10. We living in Texas, so let take a look about our hometown
+
+11. Showing the data about texas( filter by 1988, 3 other year in the middle and 2017)
+
+12. Analyze the overall texas system of sex education and abortion law ( a litle so people can see the root)
+
+13. Compare the data over the time
+
+14 15 16. Graph
+
+17. A question: Does one case of pregnacy appear in another column: one birth case appear in miscariage case?
+
+18. Example: myself 
+
+19. Nearest data in 2018 about Texas
+
+20. Conculsion

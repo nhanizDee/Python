@@ -1,6 +1,7 @@
 # Team Member:
 # Nhan Nguyen
-#  Date: Apr 5, 2023
+# Max Raven
+# Date: Apr 5, 2023
 # Program 5: Reading and working on file
 
 # Required: The attached file Random.txt contains a long list of random numbers,
