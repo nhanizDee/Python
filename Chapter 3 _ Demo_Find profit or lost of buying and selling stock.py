@@ -13,7 +13,9 @@ SELLING_PRICE = 42.75
 NUMBER_OF_SHARE = 2000
 COMMISSION_RATE = 0.03
 
-# VARIABLE - this part maybe useless when it is declared again under
+# VARIABLE
+#
+# - this part maybe useless when it is declared again under
 amt_paid_for_stock = 0.00
 commission_purchase = 0.00
 total_paid = 0.00
